@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -23,17 +23,27 @@ export default function Footer() {
           
           <div className="flex items-center gap-2">
             <MapPin size={16} className="text-emerald-400" />
-            Southend-on-Sea, UK
+            London, UK
           </div>
 
           <a 
-            href="https://www.linkedin.com/in/amoghhh-34129a1b9" 
+            href="https://www.linkedin.com/in/amogh-hh-34129a1b9" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center gap-2 hover:text-white transition-colors"
           >
             <Linkedin size={16} className="text-emerald-400" />
             LinkedIn Profile
+          </a>
+
+          <a 
+            href="https://www.instagram.com/amogh_malikarjun?igsh=MWltcjg1c210cDZseQ==" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 hover:text-white transition-colors"
+          >
+            <Instagram size={16} className="text-emerald-400" />
+            Instagram
           </a>
         </div>
 
