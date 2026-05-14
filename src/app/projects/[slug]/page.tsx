@@ -2,45 +2,53 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { notFound } from "next/navigation";
 
-// Pure corporate finance restructuring of the case studies.
+// Corporate finance restructuring of the 6 case studies.
 const projectsData = {
-  "bva-variance-analysis": {
-    title: "Budget vs. Actual (BvA) Variance Analysis",
-    context: "Departmental expenditure tracking and cost-control initiative.",
-    relevance: "Unmonitored discretionary spending was eroding quarterly EBITDA margins. Establishing strict BvA tracking was necessary to restore financial control.",
-    tools: "Advanced Excel (PivotTables, Index/Match), Financial Modelling.",
-    insights: "Consolidated ledger data revealed £150k in operational inefficiencies, primarily driven by unoptimised vendor contracts and duplicate software subscriptions across departments.",
-    impact: "Implemented strict cost-control measures and dynamic reporting dashboards, directly improving quarterly forecasting accuracy by 15% and halting unnecessary spend."
+  "zara-cost-analysis": {
+    title: "Strategic Cost & Operational Risk Analysis: Zara",
+    context: "Financial evaluation of Zara's supply chain cost structures vs. capital efficiency.",
+    relevance: "Understanding the financial trade-off between higher Unit Costs and Total Cost efficiency is critical for working capital optimisation.",
+    tools: "Cost Management, Operational Risk Assessment, Financial Modelling.",
+    insights: "Accepting 30-40% higher manufacturing costs in Europe allowed Zara to drastically minimise inventory write-offs. Small batch production cycles directly improved the Cash Conversion Cycle.",
+    impact: "Demonstrated how optimising Total Cost over Unit Cost drives superior Asset Turnover and Gross Margin, mitigating financial vulnerabilities in centralised distribution models."
   },
-  "financial-statement-analysis": {
-    title: "Financial Statement & Liquidity Analysis",
-    context: "Working capital assessment to identify cash flow bottlenecks in a retail firm.",
-    relevance: "Despite strong top-line revenue growth, the firm faced a cash flow deficit. Ensuring liquidity is critical to avoiding short-term insolvency.",
-    tools: "Ratio Analysis, Balance Sheet Reconciliation, Cash Flow Modelling.",
-    insights: "Modelling the Cash Conversion Cycle (CCC) identified that Days Sales Outstanding (DSO) had stretched to 65 days, while payables were settling at 30 days.",
-    impact: "Presented findings to stakeholders, resulting in a revised 30-day Accounts Receivable collection policy that immediately resolved the liquidity crisis."
+  "banking-stocks-risk-analysis": {
+    title: "Equity Risk & Return Analysis (Banking Sector)",
+    context: "Comprehensive market volatility and investment performance assessment of Indian banking stocks.",
+    relevance: "Accurately measuring risk-adjusted returns is essential for robust portfolio construction and mitigating exposure to market volatility.",
+    tools: "Risk Analysis, Return Analysis, Variance, Beta Calculation.",
+    insights: "Analysing secondary market data for public and private sector banks revealed clear distinctions in systematic vs. unsystematic risk. Benchmarking against the Bank Nifty index provided clear sensitivity metrics.",
+    impact: "Provided actionable equity selection insights to guide portfolio diversification, highlighting the exact trade-offs between risk and return across different banking equities."
   },
   "credit-risk-analytics": {
     title: "Retail Credit Risk Portfolio Assessment",
     context: "Risk mitigation strategy targeting non-performing loans (NPLs) in retail banking.",
     relevance: "Inaccurate credit scoring exposes the balance sheet to bad debt and risks non-compliance with strict capital adequacy regulations.",
-    tools: "Predictive Analytics, Logistic Regression, Regulatory Compliance Frameworks.",
-    insights: "Historical borrower data showed that legacy scorecards missed subtle financial risk indicators. New models accurately flagged these high-risk accounts.",
-    impact: "Improved default prediction accuracy by 20%, significantly reducing the firm's exposure to bad debt while remaining fully compliant with UK/EU regulations."
+    tools: "Predictive Analytics, Logistic Regression, Random Forest, Regulatory Compliance Frameworks.",
+    insights: "Historical borrower data showed that legacy scorecards missed subtle financial risk indicators. New machine learning models accurately flagged these high-risk accounts while using SHAP explainable AI for transparency.",
+    impact: "Improved default prediction accuracy, significantly reducing the firm's exposure to bad debt while remaining fully compliant with UK/EU regulations."
   },
   "cost-minimization-forecasting": {
-    title: "Supply Chain Cost Minimisation",
-    context: "Operational finance project to reduce excess inventory holding costs.",
+    title: "Operational Cost Minimisation & Forecasting",
+    context: "Quantitative modelling coursework to optimise production planning and minimise holding costs.",
     relevance: "Excess inventory unnecessarily ties up working capital. Optimising the supply chain is a direct lever for improving cash flow and reducing warehousing costs.",
-    tools: "Excel Solver, Linear Programming, Demand Forecasting.",
-    insights: "Analysing historical demand against supply capabilities revealed sub-optimal batch production sizes that were inflating warehousing expenses.",
-    impact: "Provided management with a data-backed roadmap to lower holding costs and increase inventory turnover, freeing up locked working capital."
+    tools: "Excel Solver, Linear Programming, Demand Forecasting (SES).",
+    insights: "Analysing historical demand against supply capabilities using Linear Programming revealed sub-optimal batch production sizes. Short-term sales forecasting further isolated inefficiencies.",
+    impact: "Delivered management reports with a data-backed roadmap to lower holding costs and increase inventory turnover, freeing up locked working capital."
+  },
+  "hornsea-one-wind-farm": {
+    title: "Project Financial Analysis: Hornsea One Wind Farm",
+    context: "Financial and risk assessment for the 1.2GW Hornsea One Offshore Wind Farm.",
+    relevance: "Large-scale infrastructure projects require rigorous risk management and capital expenditure control to navigate the 'Energy Trilemma' and supply chain volatility.",
+    tools: "Risk Management, Critical Path Method (CPM), GanttProject, Microsoft Excel.",
+    insights: "Analysing Contract for Difference (CfD) mechanisms and decomposing the project via a Work Breakdown Structure (WBS) isolated key vulnerabilities. Modelling discontinuous critical paths mitigated North Sea weather risks.",
+    impact: "Provided a robust risk assessment framework (VUC factors) to mitigate supply chain bottlenecks and protect capital expenditure during complex renewable infrastructure development."
   },
   "spotify-analytics": {
-    title: "Revenue Trend Analysis & Forecasting",
+    title: "Revenue Trend Analysis in Digital Streaming",
     context: "Commercial analysis of digital streaming assets to optimise marketing spend.",
     relevance: "Marketing budgets were being allocated inefficiently. Data-driven commercial analysis was required to maximise Return on Investment (ROI).",
-    tools: "R Programming, Regression Modelling, Revenue Analysis.",
+    tools: "R Programming, Regression Modelling, Revenue Analysis, Data-driven Decision Making.",
     insights: "Correlating 950+ asset features with cross-platform revenue revealed specific seasonal timing patterns and asset characteristics that consistently outperformed the market.",
     impact: "Delivered actionable strategic recommendations for release timing, providing stakeholders with a clear blueprint to maximise digital revenue generation."
   }

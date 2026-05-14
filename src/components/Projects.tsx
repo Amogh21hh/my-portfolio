@@ -1,36 +1,36 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, TrendingUp, AlertCircle, BarChart3, LineChart, PieChart } from "lucide-react";
+import { ArrowRight, TrendingUp, AlertCircle, BarChart3, LineChart, PieChart, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 
 export default function Projects() {
   const projects = [
     {
-      title: "Budget vs. Actual (BvA) Variance Analysis",
-      slug: "bva-variance-analysis",
-      icon: <LineChart className="text-emerald-400 mb-3" size={28} />,
-      context: "Departmental expenditure tracking and cost-control initiative.",
+      title: "Strategic Cost & Operational Risk Analysis: Zara",
+      slug: "zara-cost-analysis",
+      icon: <PieChart className="text-emerald-400 mb-3" size={28} />,
+      context: "Financial evaluation of supply chain cost structures vs. capital efficiency.",
       outcomes: [
-        "Consolidated ledger data to track monthly departmental expenditures against forecasted budgets.",
-        "Identified £150k in operational inefficiencies driven by unoptimised vendor contracts.",
-        "Built dynamic Excel dashboards for management to monitor ongoing BvA discrepancies."
+        "Analysed the financial trade-off between 30-40% higher European manufacturing costs and reduced inventory write-offs.",
+        "Modelled how 'small batch' production cycles improve Working Capital and Cash Conversion Cycles.",
+        "Identified key financial vulnerabilities and operational risks in centralised distribution models."
       ],
-      impact: "Reduced discretionary spending and improved quarterly forecasting accuracy by 15%.",
-      tags: ["Variance Analysis", "Budgeting", "Excel"]
+      impact: "Demonstrated how optimising Total Cost over Unit Cost drives superior Asset Turnover and Gross Margin.",
+      tags: ["Cost Management", "Working Capital", "Operational Risk"]
     },
     {
-      title: "Financial Statement & Liquidity Analysis",
-      slug: "financial-statement-analysis",
-      icon: <PieChart className="text-emerald-400 mb-3" size={28} />,
-      context: "Working capital assessment to identify cash flow bottlenecks in a retail firm.",
+      title: "Equity Risk & Return Analysis (Banking Sector)",
+      slug: "banking-stocks-risk-analysis",
+      icon: <LineChart className="text-emerald-400 mb-3" size={28} />,
+      context: "Comprehensive market volatility and investment performance assessment.",
       outcomes: [
-        "Conducted ratio analysis on Balance Sheet data (Current Ratio, Quick Ratio, Debt-to-Equity).",
-        "Modelled the Cash Conversion Cycle to pinpoint a 65-day delay in Accounts Receivable.",
-        "Presented liquidity risk findings to stakeholders with actionable debt-recovery strategies."
+        "Evaluated systematic and unsystematic risk across public and private sector banks using secondary market data.",
+        "Calculated standard deviation, variance, and beta to benchmark stock performance against the Bank Nifty index.",
+        "Assessed market sensitivity and risk-adjusted returns to support portfolio diversification."
       ],
-      impact: "Triggered a revised 30-day AR collection policy, resolving the short-term cash deficit.",
-      tags: ["Financial Reporting", "Working Capital", "P&L"]
+      impact: "Provided actionable equity selection insights to guide robust portfolio construction and risk mitigation.",
+      tags: ["Risk Analysis", "Portfolio Management", "Equities"]
     },
     {
       title: "Retail Credit Risk Portfolio Assessment",
@@ -38,37 +38,50 @@ export default function Projects() {
       icon: <AlertCircle className="text-emerald-400 mb-3" size={28} />,
       context: "Risk mitigation strategy targeting non-performing loans (NPLs) in retail banking.",
       outcomes: [
-        "Analysed historical borrower data to assess default probabilities.",
-        "Built predictive models to flag high-risk accounts that traditional scorecards missed.",
-        "Ensured all risk assessments complied with strict UK/EU financial regulations."
+        "Analysed historical borrower data using Logistic Regression and Random Forest to assess default probabilities.",
+        "Integrated SHAP explainable AI to ensure model transparency and compliance with UK/EU financial regulations.",
+        "Benchmarked machine learning model accuracy against traditional credit scoring scorecards."
       ],
-      impact: "Improved default prediction accuracy by 20%, directly reducing potential bad debt exposure.",
+      impact: "Improved default prediction accuracy, significantly reducing the firm's potential bad debt exposure.",
       tags: ["Credit Risk", "Predictive Analytics", "Compliance"]
     },
     {
-      title: "Supply Chain Cost Minimisation",
+      title: "Operational Cost Minimisation & Forecasting",
       slug: "cost-minimization-forecasting",
       icon: <TrendingUp className="text-emerald-400 mb-3" size={28} />,
-      context: "Operational finance project to reduce excess inventory holding costs.",
+      context: "Quantitative modelling to optimise production and minimise holding costs.",
       outcomes: [
-        "Analysed supply chain cost structures and historical demand data.",
-        "Developed Linear Programming models in Excel Solver to optimise batch production sizes.",
-        "Aligned short-term sales forecasts with warehousing capacity limits."
+        "Built Linear Programming models in Excel Solver to optimise supply-demand distributions.",
+        "Developed short-term sales forecasting models using Single Exponential Smoothing (SES).",
+        "Evaluated forecasting accuracy by calculating MAD, MSE, and MAPE metrics."
       ],
-      impact: "Provided a data-backed roadmap to lower holding costs and increase inventory turnover.",
+      impact: "Delivered data-backed management reports offering strategic pathways to lower operational costs.",
       tags: ["Cost Analysis", "Excel Solver", "Forecasting"]
     },
     {
-      title: "Revenue Trend Analysis & Forecasting",
+      title: "Project Financial Analysis: Hornsea One Wind Farm",
+      slug: "hornsea-one-wind-farm",
+      context: "Financial and risk assessment for a 1.2GW complex renewable infrastructure project.",
+      icon: <ShieldCheck className="text-emerald-400 mb-3" size={28} />,
+      outcomes: [
+        "Analysed Contract for Difference (CfD) financial mechanisms and their impact on the 'Energy Trilemma'.",
+        "Developed a comprehensive Work Breakdown Structure (WBS) across five core project phases.",
+        "Modelled discontinuous critical paths using PERT/CPM to mitigate supply chain bottlenecks."
+      ],
+      impact: "Provided a robust risk assessment framework that mitigates volatility and protects capital expenditure.",
+      tags: ["Risk Management", "CPM", "Capital Projects"]
+    },
+    {
+      title: "Revenue Trend Analysis in Digital Streaming",
       slug: "spotify-analytics",
       icon: <BarChart3 className="text-emerald-400 mb-3" size={28} />,
       context: "Commercial analysis of digital streaming assets to optimise marketing spend.",
       outcomes: [
-        "Analysed revenue-driving characteristics across 950+ digital assets.",
-        "Built regression models to correlate specific asset features with cross-platform revenue.",
-        "Identified seasonal timing patterns that consistently yielded higher ROI."
+        "Analysed revenue-driving characteristics across 950+ digital assets using R programming.",
+        "Built regression models to correlate specific audio features with cross-platform performance metrics.",
+        "Evaluated actual vs. predicted streaming volumes to identify seasonal market trends."
       ],
-      impact: "Delivered actionable strategies for release timing, maximising digital revenue generation.",
+      impact: "Delivered strategic recommendations for release timing, maximising digital revenue generation.",
       tags: ["Revenue Modelling", "Commercial Finance", "R"]
     }
   ];
@@ -82,7 +95,7 @@ export default function Projects() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-3xl font-bold mb-12 text-center text-white">Featured Finance Projects</h3>
+          <h3 className="text-3xl font-bold mb-12 text-center text-white">Featured Finance Business Cases</h3>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {projects.map((project, i) => (
