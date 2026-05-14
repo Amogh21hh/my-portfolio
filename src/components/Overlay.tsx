@@ -35,9 +35,12 @@ export default function Overlay() {
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4">
             Amogh H H.<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
-              Finance & Analytics.
+              Finance & Data Analyst.
             </span>
           </h1>
+          <p className="text-xl text-gray-300 mt-6 max-w-2xl mx-auto font-medium">
+            London, UK
+          </p>
         </motion.div>
 
         {/* Section 2: Left Aligned */}
@@ -45,10 +48,14 @@ export default function Overlay() {
           style={{ opacity: opacity2, y: y2 }}
           className="absolute left-8 md:left-24 max-w-xl"
         >
-          <h2 className="text-4xl md:text-6xl font-semibold leading-tight">
-            Bridging traditional<br />
-            accounting & analytics.
+          <h2 className="text-4xl md:text-6xl font-semibold leading-tight mb-6">
+            Translating complex data<br />
+            into commercial value.
           </h2>
+          <p className="text-xl text-gray-400">
+            Specialising in financial modelling, variance analysis,<br />
+            and risk assessment to drive bottom-line performance.
+          </p>
         </motion.div>
 
         {/* Section 3: Right Aligned */}
@@ -56,10 +63,14 @@ export default function Overlay() {
           style={{ opacity: opacity3, y: y3 }}
           className="absolute right-8 md:right-24 max-w-xl text-right"
         >
-          <h2 className="text-4xl md:text-6xl font-semibold leading-tight">
-            Driving efficiency<br />
-            with data insights.
+          <h2 className="text-4xl md:text-6xl font-semibold leading-tight mb-6">
+            Empowering decisions<br />
+            with precision.
           </h2>
+          <p className="text-xl text-gray-400">
+            Bridging operational finance and advanced analytics<br />
+            using Excel, R, and Cloud Accounting (Xero).
+          </p>
         </motion.div>
 
       </div>

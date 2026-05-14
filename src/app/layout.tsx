@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Amogh H H | Finance & Analytics Professional",
-  description: "Scrollytelling portfolio showcasing data-driven insights and financial expertise.",
+  title: "Amogh H H | Finance & Data Analyst",
+  description: "Finance & Data Analyst portfolio specialising in variance analysis, financial modelling, and commercial insights.",
 };
 
 export default function RootLayout({

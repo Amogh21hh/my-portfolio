@@ -3,49 +3,35 @@
 import { motion } from "framer-motion";
 
 export default function Skills() {
-  // To add more detailed skills in the future, simply add them to these arrays!
   const skillCategories = [
     {
-      category: "Finance & Accounting",
+      category: "Commercial & Financial Analysis",
       skills: [
-        "Financial Analysis",
-        "Bank Reconciliation",
+        "Financial Statement Analysis",
+        "Budgeting & Variance Analysis",
+        "Financial Modelling & Forecasting",
+        "Business Performance Insights",
+        "Credit Risk Assessment"
+      ]
+    },
+    {
+      category: "Accounting & Operational Control",
+      skills: [
         "Financial Reporting",
-        "Financial Modeling",
+        "High-Volume Bank Reconciliations",
         "Accounts Payable (AP) & Receivable (AR)",
-        "Cost Management",
-        "Operational Risk"
+        "Internal Controls & Compliance",
+        "Cash Flow Management"
       ]
     },
     {
-      category: "Data Analytics & Modeling",
+      category: "Data & Technical Proficiencies",
       skills: [
-        "Predictive Analytics",
-        "Linear Regression & Logistic Regression",
-        "Excel Solver & Linear Programming",
-        "Financial Forecasting",
-        "Statistical Data Analysis",
-        "Data Visualization"
-      ]
-    },
-    {
-      category: "Tools & Technologies",
-      skills: [
-        "Xero Cloud Accounting (Certified Level 1 & 2)",
-        "Microsoft Excel (Advanced)",
-        "R (Programming Language)",
-        "GanttProject",
-        "CRM Systems"
-      ]
-    },
-    {
-      category: "Business & Management",
-      skills: [
-        "Project Planning & Critical Path Method",
-        "Stakeholder Management",
-        "HIPAA & ERISA Compliance",
-        "Quality Control & Data Validation",
-        "Cash Handling & Operations"
+        "Microsoft Excel (Advanced, Power Query, Solver)",
+        "R Programming & Predictive Analytics",
+        "SQL (Data Extraction & Validation)",
+        "Xero Cloud Accounting (Level 1 & 2 Certified)",
+        "Data-driven Decision Making"
       ]
     }
   ];
@@ -54,9 +40,7 @@ export default function Skills() {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
+      transition: { staggerChildren: 0.1 }
     }
   };
 
@@ -74,9 +58,9 @@ export default function Skills() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-4xl font-bold mb-16 text-center text-white">Technical & Professional Skills</h3>
+          <h3 className="text-4xl font-bold mb-16 text-center text-white">Core Strengths & Technical Competencies</h3>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {skillCategories.map((group, i) => (
               <motion.div 
                 key={i}
@@ -86,21 +70,21 @@ export default function Skills() {
                 viewport={{ once: true }}
                 className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8"
               >
-                <h4 className="text-2xl font-semibold mb-6 text-emerald-400">
+                <h4 className="text-xl font-semibold mb-6 text-emerald-400 border-b border-white/10 pb-4">
                   {group.category}
                 </h4>
                 
-                <div className="flex flex-wrap gap-3">
+                <ul className="flex flex-col gap-3">
                   {group.skills.map((skill, j) => (
-                    <motion.span 
+                    <motion.li 
                       key={j}
                       variants={itemVariants}
-                      className="px-4 py-2 bg-white/10 hover:bg-emerald-500/20 hover:text-emerald-300 hover:border-emerald-500/30 transition-colors border border-white/5 rounded-lg text-sm font-medium text-gray-200"
+                      className="text-gray-300 font-medium text-sm flex items-start gap-2"
                     >
-                      {skill}
-                    </motion.span>
+                      <span className="text-emerald-500 mt-1">•</span> {skill}
+                    </motion.li>
                   ))}
-                </div>
+                </ul>
               </motion.div>
             ))}
           </div>
