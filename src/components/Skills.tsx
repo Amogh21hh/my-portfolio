@@ -5,33 +5,33 @@ import { motion } from "framer-motion";
 export default function Skills() {
   const skillCategories = [
     {
-      category: "Commercial & Financial Analysis",
+      category: "Finance & Accounting",
       skills: [
         "Financial Statement Analysis",
-        "Budgeting & Variance Analysis",
-        "Financial Modelling & Forecasting",
-        "Business Performance Insights",
-        "Credit Risk Assessment"
-      ]
-    },
-    {
-      category: "Accounting & Operational Control",
-      skills: [
         "Financial Reporting",
-        "High-Volume Bank Reconciliations",
-        "Accounts Payable (AP) & Receivable (AR)",
-        "Internal Controls & Compliance",
-        "Cash Flow Management"
+        "Budgeting & Forecasting",
+        "Variance Analysis",
+        "Cost & Revenue Analysis"
       ]
     },
     {
-      category: "Data & Technical Proficiencies",
+      category: "Accounting Exposure",
       skills: [
-        "Microsoft Excel (Advanced, Power Query, Solver)",
-        "R Programming & Predictive Analytics",
-        "SQL (Data Extraction & Validation)",
-        "Xero Cloud Accounting (Level 1 & 2 Certified)",
-        "Data-driven Decision Making"
+        "P&L (Profit & Loss) Management",
+        "Balance Sheet Reconciliation",
+        "Cash Flow Monitoring",
+        "Financial Ratio Analysis",
+        "Month-End Close Support"
+      ]
+    },
+    {
+      category: "Analytics (Supportive)",
+      skills: [
+        "Data Analysis (Advanced Excel, R)",
+        "Financial Modelling",
+        "Basic Predictive Modelling",
+        "Data Visualization",
+        "Xero Cloud Accounting"
       ]
     }
   ];
@@ -45,7 +45,7 @@ export default function Skills() {
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 15 },
     show: { opacity: 1, y: 0 }
   };
 
@@ -58,7 +58,7 @@ export default function Skills() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-4xl font-bold mb-16 text-center text-white">Core Strengths & Technical Competencies</h3>
+          <h3 className="text-3xl font-bold mb-12 text-center text-white">Core Finance Competencies</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {skillCategories.map((group, i) => (
@@ -68,20 +68,20 @@ export default function Skills() {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true }}
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8"
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8"
               >
-                <h4 className="text-xl font-semibold mb-6 text-emerald-400 border-b border-white/10 pb-4">
+                <h4 className="text-lg font-semibold mb-6 text-emerald-400 border-b border-white/10 pb-4">
                   {group.category}
                 </h4>
                 
-                <ul className="flex flex-col gap-3">
+                <ul className="flex flex-col gap-4">
                   {group.skills.map((skill, j) => (
                     <motion.li 
                       key={j}
                       variants={itemVariants}
-                      className="text-gray-300 font-medium text-sm flex items-start gap-2"
+                      className="text-gray-300 font-medium text-sm flex items-start gap-3"
                     >
-                      <span className="text-emerald-500 mt-1">•</span> {skill}
+                      <span className="text-emerald-500 mt-0.5">✔</span> {skill}
                     </motion.li>
                   ))}
                 </ul>

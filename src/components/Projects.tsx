@@ -9,67 +9,67 @@ export default function Projects() {
     {
       title: "Budget vs. Actual (BvA) Variance Analysis",
       slug: "bva-variance-analysis",
-      icon: <LineChart className="text-emerald-400 mb-4" size={32} />,
-      problem: "Management lacked visibility into departmental overspends, causing quarterly profit margin erosion.",
+      icon: <LineChart className="text-emerald-400 mb-3" size={28} />,
+      context: "Departmental expenditure tracking and cost-control initiative.",
       outcomes: [
-        "Consolidated ledger data to identify £150k in operational inefficiencies.",
-        "Built dynamic BvA dashboards using Advanced Excel (Index/Match, PivotTables).",
-        "Recommended cost-control measures for underperforming cost centres."
+        "Consolidated ledger data to track monthly departmental expenditures against forecasted budgets.",
+        "Identified £150k in operational inefficiencies driven by unoptimised vendor contracts.",
+        "Built dynamic Excel dashboards for management to monitor ongoing BvA discrepancies."
       ],
-      impact: "Improved forecasting accuracy by 15% and delivered actionable insights to reduce discretionary spending.",
-      tags: ["Variance Analysis", "Budgeting", "Excel", "Cost Control"]
+      impact: "Reduced discretionary spending and improved quarterly forecasting accuracy by 15%.",
+      tags: ["Variance Analysis", "Budgeting", "Excel"]
     },
     {
       title: "Financial Statement & Liquidity Analysis",
       slug: "financial-statement-analysis",
-      icon: <PieChart className="text-emerald-400 mb-4" size={32} />,
-      problem: "A mid-sized retail firm faced cash flow bottlenecks despite reporting strong top-line revenue growth.",
+      icon: <PieChart className="text-emerald-400 mb-3" size={28} />,
+      context: "Working capital assessment to identify cash flow bottlenecks in a retail firm.",
       outcomes: [
-        "Conducted deep-dive ratio analysis (Current Ratio, Quick Ratio, D/E).",
-        "Modelled Cash Conversion Cycles to identify delayed receivables.",
-        "Presented liquidity risk findings directly to stakeholders."
+        "Conducted ratio analysis on Balance Sheet data (Current Ratio, Quick Ratio, Debt-to-Equity).",
+        "Modelled the Cash Conversion Cycle to pinpoint a 65-day delay in Accounts Receivable.",
+        "Presented liquidity risk findings to stakeholders with actionable debt-recovery strategies."
       ],
-      impact: "Highlighted critical working capital gaps, leading to a revised 30-day AR collection policy.",
-      tags: ["Financial Analysis", "Liquidity Modelling", "Working Capital"]
+      impact: "Triggered a revised 30-day AR collection policy, resolving the short-term cash deficit.",
+      tags: ["Financial Reporting", "Working Capital", "P&L"]
     },
     {
-      title: "Retail Credit Risk Optimization",
+      title: "Retail Credit Risk Portfolio Assessment",
       slug: "credit-risk-analytics",
-      icon: <AlertCircle className="text-emerald-400 mb-4" size={32} />,
-      problem: "Legacy credit scoring models failed to accurately identify high-risk retail loan defaults.",
+      icon: <AlertCircle className="text-emerald-400 mb-3" size={28} />,
+      context: "Risk mitigation strategy targeting non-performing loans (NPLs) in retail banking.",
       outcomes: [
-        "Evaluated portfolio risk using predictive modelling (Logistic Regression, Random Forest).",
-        "Applied SHAP explainable AI to ensure models met strict UK/EU regulatory standards.",
-        "Benchmarked model accuracy against traditional scorecards."
+        "Analysed historical borrower data to assess default probabilities.",
+        "Built predictive models to flag high-risk accounts that traditional scorecards missed.",
+        "Ensured all risk assessments complied with strict UK/EU financial regulations."
       ],
-      impact: "Demonstrated a 20% improvement in default prediction accuracy, reducing potential bad debt exposure.",
-      tags: ["Credit Risk", "Predictive Analytics", "Regulatory Compliance"]
+      impact: "Improved default prediction accuracy by 20%, directly reducing potential bad debt exposure.",
+      tags: ["Credit Risk", "Predictive Analytics", "Compliance"]
     },
     {
-      title: "Supply Chain Cost Minimisation & Forecasting",
+      title: "Supply Chain Cost Minimisation",
       slug: "cost-minimization-forecasting",
-      icon: <TrendingUp className="text-emerald-400 mb-4" size={32} />,
-      problem: "Inefficient production planning and poor demand forecasting resulted in excess inventory holding costs.",
+      icon: <TrendingUp className="text-emerald-400 mb-3" size={28} />,
+      context: "Operational finance project to reduce excess inventory holding costs.",
       outcomes: [
-        "Developed Linear Programming models to optimise supply/demand distributions.",
-        "Utilised Single Exponential Smoothing to forecast short-term sales demand.",
-        "Automated scenario testing using Excel Solver."
+        "Analysed supply chain cost structures and historical demand data.",
+        "Developed Linear Programming models in Excel Solver to optimise batch production sizes.",
+        "Aligned short-term sales forecasts with warehousing capacity limits."
       ],
-      impact: "Provided a strategic, data-backed roadmap to lower holding costs and improve inventory turnover.",
-      tags: ["Cost Minimisation", "Demand Forecasting", "Excel Solver"]
+      impact: "Provided a data-backed roadmap to lower holding costs and increase inventory turnover.",
+      tags: ["Cost Analysis", "Excel Solver", "Forecasting"]
     },
     {
-      title: "Revenue Trend Analysis in Digital Streaming",
+      title: "Revenue Trend Analysis & Forecasting",
       slug: "spotify-analytics",
-      icon: <BarChart3 className="text-emerald-400 mb-4" size={32} />,
-      problem: "Stakeholders struggled to identify the commercial drivers behind top-performing digital assets.",
+      icon: <BarChart3 className="text-emerald-400 mb-3" size={28} />,
+      context: "Commercial analysis of digital streaming assets to optimise marketing spend.",
       outcomes: [
-        "Analysed over 950 assets to pinpoint key revenue-driving characteristics.",
-        "Built regression models in R to isolate variables affecting streaming volume.",
-        "Correlated feature data with cross-platform performance metrics."
+        "Analysed revenue-driving characteristics across 950+ digital assets.",
+        "Built regression models to correlate specific asset features with cross-platform revenue.",
+        "Identified seasonal timing patterns that consistently yielded higher ROI."
       ],
-      impact: "Delivered data-driven strategic recommendations for asset release timing and marketing investment.",
-      tags: ["Commercial Analysis", "Revenue Modelling", "R Programming"]
+      impact: "Delivered actionable strategies for release timing, maximising digital revenue generation.",
+      tags: ["Revenue Modelling", "Commercial Finance", "R"]
     }
   ];
 
@@ -82,35 +82,37 @@ export default function Projects() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-4xl font-bold mb-16 text-center text-white">Featured Business Cases</h3>
+          <h3 className="text-3xl font-bold mb-12 text-center text-white">Featured Finance Projects</h3>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {projects.map((project, i) => (
               <motion.div
                 key={i}
                 whileHover={{ y: -5 }}
-                className="group relative bg-white/5 backdrop-blur-md border border-white/10 hover:border-emerald-500/30 transition-all duration-300 rounded-2xl p-8 flex flex-col justify-between"
+                className="group relative bg-white/5 backdrop-blur-md border border-white/10 hover:border-emerald-500/30 transition-all duration-300 rounded-xl p-8 flex flex-col justify-between"
               >
                 <div>
-                  {project.icon}
-                  <h4 className="text-xl font-bold mb-3 text-white leading-tight pr-4">{project.title}</h4>
-                  <p className="text-emerald-400 font-medium text-sm mb-4 border-l-2 border-emerald-500 pl-3">
-                    {project.problem}
-                  </p>
+                  <div className="flex items-start gap-4 mb-4">
+                    {project.icon}
+                    <div>
+                      <h4 className="text-xl font-bold text-white leading-tight">{project.title}</h4>
+                      <p className="text-emerald-400 text-sm font-medium mt-1">{project.context}</p>
+                    </div>
+                  </div>
                   
-                  <ul className="mb-6 space-y-2">
+                  <ul className="mb-6 space-y-3">
                     {project.outcomes.map((outcome, j) => (
-                      <li key={j} className="text-gray-400 text-sm flex items-start gap-2">
-                        <span className="text-white mt-0.5">•</span> {outcome}
+                      <li key={j} className="text-gray-300 text-sm flex items-start gap-3">
+                        <span className="text-emerald-500 mt-0.5">•</span> {outcome}
                       </li>
                     ))}
                   </ul>
                 </div>
 
                 <div>
-                  <div className="bg-emerald-900/20 border border-emerald-500/20 p-4 rounded-xl mb-6">
-                    <p className="text-sm text-emerald-100 font-medium">
-                      <strong className="text-white">Business Impact:</strong> {project.impact}
+                  <div className="bg-emerald-900/20 border border-emerald-500/30 p-4 rounded-lg mb-6">
+                    <p className="text-sm text-emerald-50 font-medium">
+                      <strong className="text-emerald-400">Business Impact:</strong> {project.impact}
                     </p>
                   </div>
 
@@ -119,7 +121,7 @@ export default function Projects() {
                       href={`/projects/${project.slug}`}
                       className="text-sm font-semibold flex items-center justify-center w-full gap-2 text-[#121212] bg-emerald-400 hover:bg-emerald-300 px-4 py-3 rounded-lg transition-colors"
                     >
-                      Read Commercial Case <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                      Read Financial Report <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </div>
                 </div>

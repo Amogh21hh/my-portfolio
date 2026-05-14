@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Amogh H H | Finance & Data Analyst",
-  description: "Finance & Data Analyst portfolio specialising in variance analysis, financial modelling, and commercial insights.",
+  title: "Amogh H H | Finance & Accounting Graduate | UK Graduate Visa",
+  description: "Finance & Accounting Graduate seeking entry-level analyst roles in London. Full Right to Work (Graduate Visa).",
 };
 
 export default function RootLayout({

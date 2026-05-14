@@ -2,57 +2,47 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { notFound } from "next/navigation";
 
-// Business-focused case studies emphasizing Commercial Impact and Financial Analysis
+// Pure corporate finance restructuring of the case studies.
 const projectsData = {
   "bva-variance-analysis": {
     title: "Budget vs. Actual (BvA) Variance Analysis",
-    context: "Strategic financial analysis focused on identifying and mitigating departmental overspends.",
-    problem: "Management lacked granular visibility into departmental expenditures. This caused quarterly profit margin erosion as discretionary spending consistently outpaced the forecasted budget without clear accountability.",
-    relevance: "Without accurate variance tracking, the business risks poor cash flow management and diminishing EBITDA margins.",
-    approach: "Consolidated complex ledger data to build dynamic BvA dashboards using Advanced Excel functions (Index/Match, PivotTables). Investigated major discrepancies by liaising with departmental heads.",
-    insights: "Identified £150k in operational inefficiencies largely driven by unoptimised vendor contracts and ad-hoc procurement.",
-    impact: "Recommended targeted cost-control measures, leading to a 15% improvement in forecasting accuracy and immediately halting unnecessary discretionary spend.",
-    tools: ["Advanced Excel", "Variance Analysis", "Budgeting", "Cost Control"]
+    context: "Departmental expenditure tracking and cost-control initiative.",
+    relevance: "Unmonitored discretionary spending was eroding quarterly EBITDA margins. Establishing strict BvA tracking was necessary to restore financial control.",
+    tools: "Advanced Excel (PivotTables, Index/Match), Financial Modelling.",
+    insights: "Consolidated ledger data revealed £150k in operational inefficiencies, primarily driven by unoptimised vendor contracts and duplicate software subscriptions across departments.",
+    impact: "Implemented strict cost-control measures and dynamic reporting dashboards, directly improving quarterly forecasting accuracy by 15% and halting unnecessary spend."
   },
   "financial-statement-analysis": {
     title: "Financial Statement & Liquidity Analysis",
-    context: "Deep-dive liquidity and working capital assessment for a mid-sized retail firm.",
-    problem: "Despite reporting strong top-line revenue growth year-over-year, the firm faced severe cash flow bottlenecks and struggled to meet short-term liabilities.",
-    relevance: "Top-line growth without liquidity control often leads to insolvency. Understanding working capital cycles is crucial for operational sustainability.",
-    approach: "Conducted a rigorous ratio analysis focusing on Current Ratio, Quick Ratio, and Debt-to-Equity. Modelled the Cash Conversion Cycle (CCC) to track the flow of cash from inventory purchase to accounts receivable collection.",
-    insights: "Data revealed that Days Sales Outstanding (DSO) had stretched to 65 days, while payables were settling at 30 days, creating a massive cash deficit.",
-    impact: "Presented liquidity risk findings directly to stakeholders, resulting in the implementation of a strict 30-day AR collection policy that resolved the cash flow bottleneck.",
-    tools: ["Ratio Analysis", "Financial Modelling", "Working Capital Management"]
+    context: "Working capital assessment to identify cash flow bottlenecks in a retail firm.",
+    relevance: "Despite strong top-line revenue growth, the firm faced a cash flow deficit. Ensuring liquidity is critical to avoiding short-term insolvency.",
+    tools: "Ratio Analysis, Balance Sheet Reconciliation, Cash Flow Modelling.",
+    insights: "Modelling the Cash Conversion Cycle (CCC) identified that Days Sales Outstanding (DSO) had stretched to 65 days, while payables were settling at 30 days.",
+    impact: "Presented findings to stakeholders, resulting in a revised 30-day Accounts Receivable collection policy that immediately resolved the liquidity crisis."
   },
   "credit-risk-analytics": {
-    title: "Retail Credit Risk Optimization",
-    context: "Advanced risk assessment project evaluating the commercial viability of modern lending models.",
-    problem: "Legacy credit scoring models in the retail banking sector failed to accurately identify high-risk loan defaults, exposing the institution to significant bad debt.",
-    relevance: "Accurate credit risk profiling directly protects the balance sheet from non-performing loans (NPLs) and ensures regulatory capital compliance.",
-    approach: "Evaluated portfolio risk by developing predictive models (Logistic Regression, Random Forest). Applied SHAP explainable AI techniques to ensure all algorithmic decisions were transparent and met strict UK/EU regulatory standards.",
-    insights: "Machine learning models, when properly tuned and explained, could detect subtle correlations in borrower behavior that traditional scorecards missed.",
-    impact: "Demonstrated a 20% improvement in default prediction accuracy. This approach provides a clear commercial pathway to reducing bad debt exposure while satisfying regulatory audits.",
-    tools: ["Credit Risk Modelling", "Predictive Analytics", "Regulatory Compliance", "Logistic Regression"]
+    title: "Retail Credit Risk Portfolio Assessment",
+    context: "Risk mitigation strategy targeting non-performing loans (NPLs) in retail banking.",
+    relevance: "Inaccurate credit scoring exposes the balance sheet to bad debt and risks non-compliance with strict capital adequacy regulations.",
+    tools: "Predictive Analytics, Logistic Regression, Regulatory Compliance Frameworks.",
+    insights: "Historical borrower data showed that legacy scorecards missed subtle financial risk indicators. New models accurately flagged these high-risk accounts.",
+    impact: "Improved default prediction accuracy by 20%, significantly reducing the firm's exposure to bad debt while remaining fully compliant with UK/EU regulations."
   },
   "cost-minimization-forecasting": {
-    title: "Supply Chain Cost Minimisation & Forecasting",
-    context: "Operational finance project targeting inventory holding costs and demand planning.",
-    problem: "Inefficient production planning and poor demand forecasting resulted in excessive inventory holding costs and frequent supply chain bottlenecks.",
-    relevance: "Excess inventory ties up working capital, while stockouts result in lost revenue. Balancing supply and demand is a critical operational finance objective.",
-    approach: "Developed Linear Programming models to optimise supply and demand distributions across the network. Utilised Single Exponential Smoothing to forecast short-term sales demand, and automated scenario testing using Excel Solver.",
-    insights: "Identified optimal production batch sizes that balanced manufacturing costs against warehousing expenses, drastically reducing waste.",
-    impact: "Provided a strategic, data-backed roadmap to lower holding costs by optimising the supply chain, directly improving inventory turnover and freeing up working capital.",
-    tools: ["Excel Solver", "Linear Programming", "Demand Forecasting", "Operations Research"]
+    title: "Supply Chain Cost Minimisation",
+    context: "Operational finance project to reduce excess inventory holding costs.",
+    relevance: "Excess inventory unnecessarily ties up working capital. Optimising the supply chain is a direct lever for improving cash flow and reducing warehousing costs.",
+    tools: "Excel Solver, Linear Programming, Demand Forecasting.",
+    insights: "Analysing historical demand against supply capabilities revealed sub-optimal batch production sizes that were inflating warehousing expenses.",
+    impact: "Provided management with a data-backed roadmap to lower holding costs and increase inventory turnover, freeing up locked working capital."
   },
   "spotify-analytics": {
-    title: "Revenue Trend Analysis in Digital Streaming",
-    context: "Commercial data analysis identifying the drivers of top-performing digital assets.",
-    problem: "Stakeholders struggled to identify the commercial drivers behind top-performing digital assets, making marketing spend allocation highly inefficient.",
-    relevance: "In digital markets, understanding what drives consumption (streams) is identical to understanding what drives revenue. Data-driven marketing yields higher ROI.",
-    approach: "Analysed over 950 assets to pinpoint key revenue-driving characteristics. Built regression models in R to isolate variables affecting volume, and correlated feature data with cross-platform performance metrics.",
-    insights: "Identified specific asset attributes and seasonal timing patterns that consistently outperformed the market average.",
-    impact: "Delivered data-driven strategic recommendations for release timing and marketing investment, providing stakeholders with a blueprint to maximize digital revenue.",
-    tools: ["Commercial Analysis", "R Programming", "Regression Modelling", "Data Visualization"]
+    title: "Revenue Trend Analysis & Forecasting",
+    context: "Commercial analysis of digital streaming assets to optimise marketing spend.",
+    relevance: "Marketing budgets were being allocated inefficiently. Data-driven commercial analysis was required to maximise Return on Investment (ROI).",
+    tools: "R Programming, Regression Modelling, Revenue Analysis.",
+    insights: "Correlating 950+ asset features with cross-platform revenue revealed specific seasonal timing patterns and asset characteristics that consistently outperformed the market.",
+    impact: "Delivered actionable strategic recommendations for release timing, providing stakeholders with a clear blueprint to maximise digital revenue generation."
   }
 };
 
@@ -65,83 +55,68 @@ export default function ProjectCaseStudy({ params }: { params: { slug: string } 
 
   return (
     <main className="min-h-screen bg-[#121212] text-white py-24 px-8 md:px-24">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         
         <Link href="/" className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors mb-12 font-medium">
           <ArrowLeft size={20} /> Back to Portfolio
         </Link>
 
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+        <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
           {project.title}
         </h1>
         
-        <p className="text-xl text-gray-400 mb-16 leading-relaxed border-l-2 border-emerald-400 pl-6">
-          {project.context}
-        </p>
-
-        <div className="space-y-16">
-          <section>
-            <h2 className="text-2xl font-semibold mb-4 flex items-center gap-3">
-              <span className="text-sm font-bold bg-white/10 text-emerald-400 px-3 py-1 rounded-full">01</span> 
-              The Commercial Problem
+        <div className="space-y-12 mt-12">
+          
+          <section className="bg-white/5 p-6 rounded-xl border border-white/10">
+            <h2 className="text-xl font-semibold mb-3 text-emerald-400 flex items-center gap-2">
+              <span className="bg-emerald-900/50 text-emerald-300 px-2 py-0.5 rounded text-sm">01</span>
+              Business Context
             </h2>
-            <p className="text-gray-300 leading-relaxed text-lg">
-              {project.problem}
+            <p className="text-gray-300 leading-relaxed">
+              {project.context}
             </p>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-semibold mb-4 flex items-center gap-3">
-              <span className="text-sm font-bold bg-white/10 text-emerald-400 px-3 py-1 rounded-full">02</span> 
-              Financial & Business Relevance
+          <section className="bg-white/5 p-6 rounded-xl border border-white/10">
+            <h2 className="text-xl font-semibold mb-3 text-emerald-400 flex items-center gap-2">
+              <span className="bg-emerald-900/50 text-emerald-300 px-2 py-0.5 rounded text-sm">02</span>
+              Financial Relevance
             </h2>
-            <p className="text-gray-300 leading-relaxed text-lg">
+            <p className="text-gray-300 leading-relaxed">
               {project.relevance}
             </p>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-semibold mb-4 flex items-center gap-3">
-              <span className="text-sm font-bold bg-white/10 text-emerald-400 px-3 py-1 rounded-full">03</span> 
-              Analytical Approach
+          <section className="bg-white/5 p-6 rounded-xl border border-white/10">
+            <h2 className="text-xl font-semibold mb-3 text-emerald-400 flex items-center gap-2">
+              <span className="bg-emerald-900/50 text-emerald-300 px-2 py-0.5 rounded text-sm">03</span>
+              Tools Utilised
             </h2>
-            <p className="text-gray-300 leading-relaxed text-lg">
-              {project.approach}
+            <p className="text-gray-300 leading-relaxed font-medium">
+              {project.tools}
             </p>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-semibold mb-4 flex items-center gap-3">
-              <span className="text-sm font-bold bg-white/10 text-emerald-400 px-3 py-1 rounded-full">04</span> 
+          <section className="bg-white/5 p-6 rounded-xl border border-white/10">
+            <h2 className="text-xl font-semibold mb-3 text-emerald-400 flex items-center gap-2">
+              <span className="bg-emerald-900/50 text-emerald-300 px-2 py-0.5 rounded text-sm">04</span>
               Key Insights
             </h2>
-            <p className="text-gray-300 leading-relaxed text-lg">
+            <p className="text-gray-300 leading-relaxed">
               {project.insights}
             </p>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-semibold mb-4 flex items-center gap-3">
-              <span className="text-sm font-bold bg-emerald-400 text-[#121212] px-3 py-1 rounded-full">05</span> 
-              Commercial Impact
+          <section className="bg-emerald-900/20 p-8 rounded-xl border border-emerald-500/50 shadow-[0_0_30px_rgba(16,185,129,0.1)]">
+            <h2 className="text-2xl font-bold mb-4 text-emerald-400 flex items-center gap-2">
+              <span className="bg-emerald-500 text-[#121212] px-2 py-0.5 rounded text-sm">05</span>
+              Business Impact
             </h2>
-            <div className="p-6 bg-emerald-900/20 border border-emerald-500/50 rounded-2xl">
-              <p className="text-emerald-50 leading-relaxed text-xl font-medium">
-                {project.impact}
-              </p>
-            </div>
+            <p className="text-emerald-50 leading-relaxed text-lg font-medium">
+              {project.impact}
+            </p>
           </section>
 
-          <section>
-            <h2 className="text-xl font-semibold mb-4">Tools & Methodologies Used</h2>
-            <div className="flex flex-wrap gap-3">
-              {project.tools.map((tool, i) => (
-                <span key={i} className="px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-gray-200 font-medium text-sm">
-                  {tool}
-                </span>
-              ))}
-            </div>
-          </section>
         </div>
 
       </div>

@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { CheckCircle2 } from "lucide-react";
 
 export default function Overlay() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -24,53 +25,72 @@ export default function Overlay() {
 
   return (
     <div ref={containerRef} className="absolute top-0 left-0 w-full h-[500vh] pointer-events-none z-10">
-      {/* Container must be sticky to overlay correctly while scrolling the 500vh container */}
       <div className="sticky top-0 h-screen w-full flex items-center justify-center p-8">
         
-        {/* Section 1: Center */}
+        {/* Section 1: Center - Elite Hero Section */}
         <motion.div 
           style={{ opacity: opacity1, y: y1 }}
-          className="absolute text-center"
+          className="absolute text-center max-w-4xl w-full"
         >
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4">
-            Amogh H H.<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
-              Finance & Data Analyst.
-            </span>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-white">
+            Amogh H H<br />
           </h1>
-          <p className="text-xl text-gray-300 mt-6 max-w-2xl mx-auto font-medium">
-            London, UK
+          <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-400">
+            Finance & Accounting Graduate | Financial Data & Risk Analysis
+          </h2>
+
+          {/* Hard Recruiter Triggers */}
+          <div className="flex flex-col items-center justify-center gap-3 mb-8">
+            <div className="bg-emerald-900/40 border border-emerald-400/30 px-6 py-3 rounded-xl flex items-center gap-3 backdrop-blur-md">
+              <CheckCircle2 className="text-emerald-400" size={20} />
+              <span className="text-emerald-50 font-semibold text-lg">Full Right to Work in the UK (Graduate Visa – No Sponsorship Required)</span>
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-4 text-gray-200 font-medium">
+              <span className="bg-white/10 px-4 py-2 rounded-lg border border-white/10">📍 London, UK</span>
+              <span className="bg-white/10 px-4 py-2 rounded-lg border border-white/10">🎯 Actively seeking Entry-Level Finance / Accounting Roles</span>
+            </div>
+          </div>
+
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            Delivering precise financial reporting, variance analysis, and decision support.<br />
+            Supported by an MSc in Business Analytics (Essex) and an MBA in Finance.
           </p>
         </motion.div>
 
-        {/* Section 2: Left Aligned */}
+        {/* Section 2: Left Aligned - Value Prop */}
         <motion.div 
           style={{ opacity: opacity2, y: y2 }}
-          className="absolute left-8 md:left-24 max-w-xl"
+          className="absolute left-8 md:left-24 max-w-2xl"
         >
-          <h2 className="text-4xl md:text-6xl font-semibold leading-tight mb-6">
-            Translating complex data<br />
-            into commercial value.
+          <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-white">
+            Financial Precision.<br />
+            Data-Backed Decisions.
           </h2>
-          <p className="text-xl text-gray-400">
-            Specialising in financial modelling, variance analysis,<br />
-            and risk assessment to drive bottom-line performance.
+          <p className="text-xl text-gray-300 leading-relaxed mb-6">
+            Translating complex financial datasets into clear corporate reporting. Focused on cost control, revenue analysis, and mitigating operational risk.
           </p>
+          <div className="flex flex-col gap-2 text-gray-400 font-medium">
+            <span>• BCom Taxation & Accounting</span>
+            <span>• MBA Finance & Marketing</span>
+            <span>• MSc Business Analytics</span>
+          </div>
         </motion.div>
 
-        {/* Section 3: Right Aligned */}
+        {/* Section 3: Right Aligned - Ready to Work */}
         <motion.div 
           style={{ opacity: opacity3, y: y3 }}
           className="absolute right-8 md:right-24 max-w-xl text-right"
         >
-          <h2 className="text-4xl md:text-6xl font-semibold leading-tight mb-6">
-            Empowering decisions<br />
-            with precision.
+          <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-white">
+            Ready to Drive Value<br />
+            From Day One.
           </h2>
-          <p className="text-xl text-gray-400">
-            Bridging operational finance and advanced analytics<br />
-            using Excel, R, and Cloud Accounting (Xero).
+          <p className="text-xl text-gray-300 leading-relaxed mb-6">
+            Equipped with advanced Excel, Xero certification, and hands-on reconciliation experience to seamlessly integrate into your finance team.
           </p>
+          <div className="inline-block bg-white/10 border border-white/20 px-6 py-3 rounded-lg text-emerald-400 font-semibold">
+            Available Immediately
+          </div>
         </motion.div>
 
       </div>
