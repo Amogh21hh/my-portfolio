@@ -43,7 +43,6 @@ const projectsData = {
     tools: "Risk Management, Critical Path Method (CPM), GanttProject, Microsoft Excel.",
     insights: "Analysing Contract for Difference (CfD) mechanisms and decomposing the project via a Work Breakdown Structure (WBS) isolated key vulnerabilities. Modelling discontinuous critical paths mitigated North Sea weather risks.",
     impact: "Provided a robust risk assessment framework (VUC factors) to mitigate supply chain bottlenecks and protect capital expenditure during complex renewable infrastructure development."
-  },
   }
 };
 
