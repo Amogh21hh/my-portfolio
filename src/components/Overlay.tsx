@@ -36,14 +36,14 @@ export default function Overlay() {
             Amogh H H<br />
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-400">
-            Finance & Accounting Graduate | Financial Data & Risk Analysis
+            Finance & Accounting Graduate
           </h2>
 
           {/* Hard Recruiter Triggers */}
           <div className="flex flex-col items-center justify-center gap-3 mb-8">
             <div className="bg-emerald-900/40 border border-emerald-400/30 px-6 py-3 rounded-xl flex items-center gap-3 backdrop-blur-md">
               <CheckCircle2 className="text-emerald-400" size={20} />
-              <span className="text-emerald-50 font-semibold text-lg">Full Right to Work in the UK (Graduate Visa – No Sponsorship Required)</span>
+              <span className="text-emerald-50 font-semibold text-lg">Full Right to Work in the UK (Graduate Visa)</span>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-4 text-gray-200 font-medium">
               <span className="bg-white/10 px-4 py-2 rounded-lg border border-white/10">📍 London, UK</span>

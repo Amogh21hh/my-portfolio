@@ -70,19 +70,6 @@ export default function Projects() {
       ],
       impact: "Provided a robust risk assessment framework that mitigates volatility and protects capital expenditure.",
       tags: ["Risk Management", "CPM", "Capital Projects"]
-    },
-    {
-      title: "Revenue Trend Analysis in Digital Streaming",
-      slug: "spotify-analytics",
-      icon: <BarChart3 className="text-emerald-400 mb-3" size={28} />,
-      context: "Commercial analysis of digital streaming assets to optimise marketing spend.",
-      outcomes: [
-        "Analysed revenue-driving characteristics across 950+ digital assets using R programming.",
-        "Built regression models to correlate specific audio features with cross-platform performance metrics.",
-        "Evaluated actual vs. predicted streaming volumes to identify seasonal market trends."
-      ],
-      impact: "Delivered strategic recommendations for release timing, maximising digital revenue generation.",
-      tags: ["Revenue Modelling", "Commercial Finance", "R"]
     }
   ];
 

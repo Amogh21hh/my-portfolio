@@ -7,8 +7,8 @@ export default function About() {
   const hireReasons = [
     {
       icon: <TrendingUp className="text-emerald-400 mb-3" size={24} />,
-      title: "Finance + Analytics Hybrid",
-      description: "A rare combination of traditional accounting knowledge (BCom/MBA) paired with modern data manipulation skills (MSc Analytics). I don't just report numbers; I uncover the 'why' behind them."
+      title: "Strong Accounting Foundation",
+      description: "Deep understanding of traditional accounting principles (BCom/MBA), supported by data manipulation skills (MSc Analytics) to enhance reporting accuracy and efficiency."
     },
     {
       icon: <FileCheck className="text-emerald-400 mb-3" size={24} />,
@@ -43,11 +43,11 @@ export default function About() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-emerald-500 mt-1.5">•</span>
-                <span><strong className="text-white">Core Focus:</strong> Specialising in financial reporting, variance analysis, and internal controls to drive operational efficiency.</span>
+                <span><strong className="text-white">Core Focus:</strong> Specialising in financial reporting, month-end close support, variance analysis, and maintaining robust internal controls.</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-emerald-500 mt-1.5">•</span>
-                <span><strong className="text-white">Analytical Mindset:</strong> Leveraging robust data analytics to support fundamental accounting principles, ensuring accuracy in forecasting and month-end close.</span>
+                <span><strong className="text-white">Business Decision Support:</strong> Leveraging supportive data analytics to streamline accounting processes and ensure precision in financial forecasting.</span>
               </li>
             </ul>
 
