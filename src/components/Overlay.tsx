@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, FileText, Github, Linkedin, Mail } from "lucide-react";
 
 export default function Overlay() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -30,66 +30,87 @@ export default function Overlay() {
         {/* Section 1: Center - Elite Hero Section */}
         <motion.div 
           style={{ opacity: opacity1, y: y1 }}
-          className="absolute text-center max-w-4xl w-full"
+          className="absolute text-center max-w-5xl w-full flex flex-col items-center pointer-events-auto"
         >
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-white">
-            Amogh H H<br />
+            Amogh H H
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-400">
-            Finance & Accounting Graduate
+            Finance & Accounting | Credit Risk | FP&A
           </h2>
 
           {/* Hard Recruiter Triggers */}
-          <div className="flex flex-col items-center justify-center gap-3 mb-8">
+          <div className="flex flex-col items-center justify-center gap-3 mb-8 w-full max-w-3xl">
             <div className="bg-emerald-900/40 border border-emerald-400/30 px-6 py-3 rounded-xl flex items-center gap-3 backdrop-blur-md">
               <CheckCircle2 className="text-emerald-400" size={20} />
-              <span className="text-emerald-50 font-semibold text-lg">Full Right to Work in the UK (Graduate Visa)</span>
+              <span className="text-emerald-50 font-semibold text-lg">UK Full Right to Work (Graduate Visa) & Immediate Availability</span>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-4 text-gray-200 font-medium">
-              <span className="bg-white/10 px-4 py-2 rounded-lg border border-white/10">📍 London, UK</span>
-              <span className="bg-white/10 px-4 py-2 rounded-lg border border-white/10">🎯 Actively seeking Entry-Level Finance / Accounting Roles</span>
+              <span className="bg-white/10 px-4 py-2 rounded-lg border border-white/10">🎓 MSc Business Analytics (Essex)</span>
+              <span className="bg-white/10 px-4 py-2 rounded-lg border border-white/10">🎓 MBA Finance</span>
+              <span className="bg-white/10 px-4 py-2 rounded-lg border border-white/10">📜 Xero L1 & L2 Certified</span>
             </div>
           </div>
 
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Delivering precise financial reporting, variance analysis, and decision support.<br />
-            Supported by an MSc in Business Analytics (Essex) and an MBA in Finance.
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed mb-10">
+            Analyst-level finance professional bridging the gap between traditional accounting operations and advanced financial modelling. 
+            Delivering institutional-grade credit risk, FP&A variance, and statutory reporting solutions.
           </p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <a href="/Amogh_HH_CV.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-[#121212] px-6 py-3 rounded-lg font-bold transition-colors">
+              <FileText size={20} />
+              Download CV
+            </a>
+            <a href="https://github.com/Amogh21hh" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+              <Github size={20} />
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/amogh-hh-34129a1b9" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#0A66C2] hover:bg-[#004182] text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+              <Linkedin size={20} />
+              LinkedIn
+            </a>
+            <a href="mailto:amoghmallikarjun0321@gmail.com" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+              <Mail size={20} />
+              Email
+            </a>
+          </div>
         </motion.div>
 
         {/* Section 2: Left Aligned - Value Prop */}
         <motion.div 
           style={{ opacity: opacity2, y: y2 }}
-          className="absolute left-8 md:left-24 max-w-2xl"
+          className="absolute left-8 md:left-24 max-w-2xl pointer-events-auto"
         >
           <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-white">
-            Financial Precision.<br />
-            Data-Backed Decisions.
+            Evidence-Based<br />
+            Financial Engineering.
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed mb-6">
-            Translating complex financial datasets into clear corporate reporting. Focused on cost control, revenue analysis, and mitigating operational risk.
+            Translating complex datasets into clear corporate reporting. Focused on cost control, variance analysis, and mitigating operational risk with institutional rigor.
           </p>
           <div className="flex flex-col gap-2 text-gray-400 font-medium">
-            <span>• BCom Taxation & Accounting</span>
-            <span>• MBA Finance & Marketing</span>
-            <span>• MSc Business Analytics</span>
+            <span>• Month-End Close & Reconciliation</span>
+            <span>• Credit Risk Modelling (IFRS 9)</span>
+            <span>• FP&A Variance Reporting</span>
           </div>
         </motion.div>
 
         {/* Section 3: Right Aligned - Ready to Work */}
         <motion.div 
           style={{ opacity: opacity3, y: y3 }}
-          className="absolute right-8 md:right-24 max-w-xl text-right"
+          className="absolute right-8 md:right-24 max-w-xl text-right pointer-events-auto"
         >
           <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-white">
             Ready to Drive Value<br />
             From Day One.
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed mb-6">
-            Equipped with advanced Excel, Xero certification, and hands-on reconciliation experience to seamlessly integrate into your finance team.
+            Equipped with advanced Excel, Python, SQL, and hands-on reconciliation experience to seamlessly integrate into your finance team.
           </p>
-          <div className="inline-block bg-white/10 border border-white/20 px-6 py-3 rounded-lg text-emerald-400 font-semibold">
-            Available Immediately
+          <div className="inline-block bg-white/10 border border-emerald-500/30 px-6 py-3 rounded-lg text-emerald-400 font-bold tracking-wide shadow-[0_0_15px_rgba(52,211,153,0.1)]">
+            AVAILABLE IMMEDIATELY
           </div>
         </motion.div>
 

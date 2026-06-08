@@ -1,8 +1,10 @@
 import ScrollyCanvas from "@/components/ScrollyCanvas";
 import Overlay from "@/components/Overlay";
+import NumbersStrip from "@/components/NumbersStrip";
 import About from "@/components/About";
-import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import FeaturedProjects from "@/components/FeaturedProjects";
+import AccountingModels from "@/components/AccountingModels";
 import Certifications from "@/components/Certifications";
 import Footer from "@/components/Footer";
 
@@ -13,9 +15,11 @@ export default function Home() {
         <ScrollyCanvas />
         <Overlay />
       </div>
+      <NumbersStrip />
       <About />
       <Skills />
-      <Projects />
+      <FeaturedProjects />
+      <AccountingModels />
       <Certifications />
       <Footer />
     </main>

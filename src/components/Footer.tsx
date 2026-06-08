@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Instagram, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github, FileText } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -11,9 +11,9 @@ export default function Footer() {
           <div className="flex flex-col gap-2">
             <p className="text-emerald-400 font-semibold text-lg flex items-center justify-center md:justify-start gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              Actively seeking entry-level Finance & Accounting roles
+              Actively seeking roles: Finance Assistant / FP&A / Credit Risk / Accounts Assistant
             </p>
-            <p className="text-gray-300 font-medium text-sm">
+            <p className="text-gray-300 font-bold text-sm">
               Available immediately. Full Right to Work in the UK (Graduate Visa).
             </p>
           </div>
@@ -38,22 +38,33 @@ export default function Footer() {
 
           <div className="flex gap-4 mt-2">
             <a 
+              href="/Amogh_HH_CV.pdf"
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex-1 flex justify-center items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-[#121212] transition-colors border border-emerald-500 py-3 rounded-lg font-bold"
+            >
+              <FileText size={18} />
+              Download CV
+            </a>
+
+            <a 
               href="https://www.linkedin.com/in/amogh-hh-34129a1b9" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex-1 flex justify-center items-center gap-2 hover:bg-emerald-500 hover:border-emerald-500 hover:text-[#121212] transition-colors border border-white/20 py-3 rounded-lg"
+              className="flex items-center justify-center gap-2 hover:bg-white/10 transition-colors border border-white/20 px-4 py-3 rounded-lg"
             >
               <Linkedin size={18} />
               LinkedIn
             </a>
 
             <a 
-              href="https://www.instagram.com/amogh_malikarjun?igsh=MWltcjg1c210cDZseQ==" 
+              href="https://github.com/Amogh21hh" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 hover:text-white transition-colors border border-white/20 px-4 py-3 rounded-lg"
+              className="flex items-center justify-center gap-2 hover:bg-white/10 transition-colors border border-white/20 px-4 py-3 rounded-lg"
             >
-              <Instagram size={18} />
+              <Github size={18} />
+              GitHub
             </a>
           </div>
         </div>

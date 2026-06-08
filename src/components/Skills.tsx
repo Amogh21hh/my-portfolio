@@ -5,33 +5,37 @@ import { motion } from "framer-motion";
 export default function Skills() {
   const skillCategories = [
     {
-      category: "Finance & Accounting",
+      category: "Accounting & Reporting",
       skills: [
-        "Financial Statement Analysis",
-        "Financial Reporting",
-        "Budgeting & Forecasting",
+        "Xero L1 + L2 Certified",
+        "Bank Reconciliation",
+        "Month-End Close Support",
+        "Financial Reporting (P&L, BS, CF)",
         "Variance Analysis",
-        "Cost & Revenue Analysis"
+        "Cash Flow Monitoring"
       ]
     },
     {
-      category: "Accounting Exposure",
+      category: "Credit & Financial Modelling",
       skills: [
-        "P&L (Profit & Loss) Management",
-        "Balance Sheet Reconciliation",
-        "Cash Flow Monitoring",
-        "Financial Ratio Analysis",
-        "Month-End Close Support"
+        "IFRS 9 ECL Modelling",
+        "PD / LGD / EAD Frameworks",
+        "DCF Valuation",
+        "WACC Modelling",
+        "ARIMA Forecasting",
+        "Stress Testing"
       ]
     },
     {
-      category: "Analytics (Supportive)",
+      category: "Technical Tools",
       skills: [
-        "Data Analysis (Advanced Excel, R)",
-        "Financial Modelling",
-        "Basic Predictive Modelling",
-        "Data Visualization",
-        "Xero Cloud Accounting"
+        "Excel (Advanced Modelling)",
+        "Python (pandas, sklearn, statsmodels)",
+        "R (Forecasting, Scorecards)",
+        "SQL",
+        "Power BI",
+        "Streamlit",
+        "GitHub"
       ]
     }
   ];
@@ -70,7 +74,7 @@ export default function Skills() {
                 viewport={{ once: true }}
                 className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8"
               >
-                <h4 className="text-lg font-semibold mb-6 text-emerald-400 border-b border-white/10 pb-4">
+                <h4 className="text-lg font-bold mb-6 text-emerald-400 border-b border-white/10 pb-4 tracking-wide uppercase">
                   {group.category}
                 </h4>
                 
