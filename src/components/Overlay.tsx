@@ -36,7 +36,7 @@ export default function Overlay() {
             Amogh H H
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-6 text-emerald-400 tracking-wide uppercase">
-            Finance Operations + Credit Risk Modelling + Valuation Analytics
+            Corporate Finance, Accounting & Business Analytics Graduate
           </h2>
 
           <div className="flex flex-col items-center justify-center gap-4 mb-10 w-full max-w-4xl">
@@ -70,17 +70,17 @@ export default function Overlay() {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a href="mailto:amoghmallikarjun0321@gmail.com" className="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-[#121212] px-6 py-3 rounded-lg font-bold transition-colors">
               <Mail size={18} />
-              amoghmallikarjun0321@gmail.com
+              AMOGHMALLIKARJUN0321@GMAIL.COM
             </a>
-            <a href="/Amogh_HH_CV.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+            <a href="/Amogh_HH_CV.pdf" download="Amogh_HH_CV.pdf" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
               <FileText size={18} />
               Download CV (PDF)
             </a>
-            <a href="https://github.com/Amogh21hh" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+            <a href="https://github.com/Amogh21hh" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
               <Github size={18} />
               GitHub
             </a>
-            <a href="https://www.linkedin.com/in/amogh-hh-34129a1b9" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#0A66C2] hover:bg-[#004182] text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+            <a href="https://www.linkedin.com/in/amogh-hh-34129a1b9/" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-[#0A66C2] hover:bg-[#004182] text-white px-6 py-3 rounded-lg font-semibold transition-colors">
               <Linkedin size={18} />
               LinkedIn
             </a>
