@@ -7,35 +7,34 @@ export default function Skills() {
     {
       category: "Accounting & Reporting",
       skills: [
-        "Xero L1 + L2 Certified",
-        "Bank Reconciliation",
+        "Xero (L1 + L2 Certified)",
+        "Double-Entry Bookkeeping",
+        "Bank/Balance Sheet Reconciliations",
         "Month-End Close Support",
-        "Financial Reporting (P&L, BS, CF)",
-        "Variance Analysis",
-        "Cash Flow Monitoring"
+        "P&L & Financial Statement Analysis",
+        "Variance Tracking"
       ]
     },
     {
       category: "Credit & Financial Modelling",
       skills: [
-        "IFRS 9 ECL Modelling",
-        "PD / LGD / EAD Frameworks",
-        "DCF Valuation",
-        "WACC Modelling",
-        "ARIMA Forecasting",
-        "Stress Testing"
+        "IFRS 9 Expected Credit Loss Frameworks",
+        "PD / LGD / EAD Framework Calibration",
+        "Corporate DCF & Multi-Scenario Valuation",
+        "WACC & CAPM Capital Architectures",
+        "ARIMA Time-Series Demand Forecasting"
       ]
     },
     {
-      category: "Technical Tools",
+      category: "Tools & Ecosystems",
       skills: [
-        "Excel (Advanced Modelling)",
-        "Python (pandas, sklearn, statsmodels)",
-        "R (Forecasting, Scorecards)",
-        "SQL",
+        "Advanced Financial Excel (FAST, Power Query)",
+        "Python (pandas, NumPy, statsmodels, scikit-learn)",
+        "R Environment (forecast, scorecard components)",
+        "SQL Database Management",
         "Power BI",
-        "Streamlit",
-        "GitHub"
+        "Streamlit Engine",
+        "Git Frameworks"
       ]
     }
   ];
@@ -62,7 +61,7 @@ export default function Skills() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-3xl font-bold mb-12 text-center text-white">Core Finance Competencies</h3>
+          <h3 className="text-3xl font-bold mb-12 text-center text-white">Competency Framework Matrix</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {skillCategories.map((group, i) => (

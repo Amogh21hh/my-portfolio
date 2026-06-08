@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Github, FileText } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github, FileText, CheckCircle2 } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -8,22 +8,23 @@ export default function Footer() {
         {/* Strong Call to Action */}
         <div className="text-center md:text-left flex-1">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Drive Financial Value.</h2>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-3">
             <p className="text-emerald-400 font-semibold text-lg flex items-center justify-center md:justify-start gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              Actively seeking roles: Finance Assistant / FP&A / Credit Risk / Accounts Assistant
+              Targeting: Finance, Accounting, Credit Risk, and Business Analytics (Finance) roles.
             </p>
-            <p className="text-gray-300 font-bold text-sm">
-              Available immediately. Full Right to Work in the UK (Graduate Visa).
-            </p>
+            <div className="flex items-center justify-center md:justify-start gap-2 text-gray-200 font-bold bg-white/5 border border-white/10 px-4 py-2 rounded-lg inline-block w-max">
+               <CheckCircle2 size={16} className="text-emerald-500" />
+               Available immediately with unrestricted UK employment authorization (Graduate Visa).
+            </div>
           </div>
         </div>
 
         {/* Contact Information */}
         <div className="flex flex-col gap-4 text-gray-300 font-medium">
-          <a href="mailto:AMOGHMALLIKARJUN0321@GMAIL.COM" className="flex items-center gap-3 hover:text-emerald-400 transition-colors bg-white/5 px-6 py-3 rounded-lg border border-white/10">
+          <a href="mailto:amoghmallikarjun0321@gmail.com" className="flex items-center gap-3 hover:text-emerald-400 transition-colors bg-white/5 px-6 py-3 rounded-lg border border-white/10">
             <Mail size={18} className="text-emerald-400" />
-            AMOGHMALLIKARJUN0321@GMAIL.COM
+            amoghmallikarjun0321@gmail.com
           </a>
           
           <a href="tel:+447429880957" className="flex items-center gap-3 hover:text-emerald-400 transition-colors bg-white/5 px-6 py-3 rounded-lg border border-white/10">
@@ -68,7 +69,13 @@ export default function Footer() {
             </a>
           </div>
         </div>
-
+      </div>
+      
+      {/* System Status Timestamp */}
+      <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 text-center">
+        <p className="text-gray-500 text-xs font-mono uppercase tracking-widest">
+          System State Reconciled: June 2026
+        </p>
       </div>
     </footer>
   );

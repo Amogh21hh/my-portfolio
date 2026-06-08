@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ShieldCheck, TrendingUp, FileCheck, Target, Database, Calculator } from "lucide-react";
+import { ShieldCheck, TrendingUp, Target, Database } from "lucide-react";
 
 export default function About() {
   const hireReasons = [
@@ -34,42 +34,44 @@ export default function About() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-3xl font-bold mb-8 text-white border-b border-white/10 pb-4">Professional Identity & Focus</h3>
+            <h3 className="text-3xl font-bold mb-8 text-white border-b border-white/10 pb-4">Professional Identity</h3>
             
-            <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-              I am a finance and analytics hybrid professional bridging the gap between <strong className="text-white">routine accounting operations</strong> and <strong className="text-white">advanced financial modelling</strong>. My focus is on producing reliable, evidence-based financial insights that drive corporate decision-making.
+            <p className="text-gray-300 text-base mb-8 leading-relaxed">
+              I am a finance, accounting, and analytics professional who bridges ledger-level general accounting integrity with script-driven mathematical risk and forecasting models. My focus is on producing reliable, evidence-based financial insights that drive corporate decision-making and operational efficiency.
             </p>
 
-            <ul className="space-y-4 text-gray-300 text-base mb-8">
-              <li className="flex items-start gap-3">
-                <span className="text-emerald-500 mt-1">•</span>
-                <span><strong className="text-white">Career Goal:</strong> UK entry-level Finance, FP&A, or Credit Risk roles.</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-emerald-500 mt-1">•</span>
-                <span><strong className="text-white">Finance Skill Direction:</strong> Month-end close, balance sheet reconciliation, variance analysis, FP&A reporting, and credit risk modelling.</span>
-              </li>
-            </ul>
-
-            <h4 className="text-xl font-semibold mb-6 text-emerald-400">Professional Experience</h4>
-            <div className="bg-white/5 p-6 rounded-xl border border-white/10">
-              <h5 className="font-bold text-lg text-white mb-1">Carelon Global Solutions</h5>
-              <p className="text-emerald-400 text-sm font-medium mb-4">Operations & Data Processing</p>
-              <ul className="space-y-2 text-gray-300 text-sm">
+            <h4 className="text-xl font-semibold mb-6 text-emerald-400">Prior Commercial Evidence</h4>
+            <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-8">
+              <h5 className="font-bold text-lg text-white mb-1">Carelon Global Solutions (Elevance Health)</h5>
+              <p className="text-emerald-400 text-sm font-medium mb-4">Operations & Data Processing (9 Months)</p>
+              <ul className="space-y-3 text-gray-300 text-sm">
                 <li className="flex items-start gap-3">
                   <span className="text-emerald-500 mt-0.5">✔</span>
-                  <span>Processed <strong className="text-white">500+ financial records weekly</strong> within strict Service Level Agreements.</span>
+                  <span>Processed over <strong className="text-white">500 regulated corporate operational records weekly</strong> with a verified <strong className="text-white">98% accuracy baseline</strong>.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-emerald-500 mt-0.5">✔</span>
-                  <span>Maintained a <strong className="text-white">98% accuracy rate</strong> in high-volume transaction processing.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-emerald-500 mt-0.5">✔</span>
-                  <span>Executed compliance-driven work in a highly regulated environment (HIPAA/ERISA equivalent structure), ensuring zero audit failures.</span>
+                  <span>Executed high-volume transaction processing under strict <strong className="text-white">HIPAA/ERISA compliance environments</strong>, functioning as a direct analogue to a financial services shared-services data infrastructure.</span>
                 </li>
               </ul>
             </div>
+
+            <h4 className="text-xl font-semibold mb-6 text-emerald-400">Day-to-Day Operations Integration</h4>
+            <ul className="space-y-3 text-gray-300 text-base mb-8">
+              <li className="flex items-start gap-3">
+                <span className="text-emerald-500 mt-1">•</span>
+                <span>Explicit competency in executing <strong className="text-white">month-end close support processes</strong>.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-emerald-500 mt-1">•</span>
+                <span>Managing high-volume <strong className="text-white">bank and balance sheet reconciliations</strong>.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-emerald-500 mt-1">•</span>
+                <span>Structuring <strong className="text-white">variance tracking reports</strong> and implementing <strong className="text-white">risk-modeling mechanics</strong>.</span>
+              </li>
+            </ul>
+
           </motion.div>
 
           {/* Why Hire Me */}

@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { CheckCircle2, FileText, Github, Linkedin, Mail } from "lucide-react";
+import { FileText, Github, Linkedin, Mail } from "lucide-react";
 
 export default function Overlay() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -32,48 +32,57 @@ export default function Overlay() {
           style={{ opacity: opacity1, y: y1 }}
           className="absolute text-center max-w-5xl w-full flex flex-col items-center pointer-events-auto"
         >
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-white">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-2 text-white">
             Amogh H H
           </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-400">
-            Finance & Accounting | Credit Risk | FP&A
+          <h2 className="text-xl md:text-2xl font-semibold mb-6 text-emerald-400 tracking-wide uppercase">
+            Finance Operations + Credit Risk Modelling + Valuation Analytics
           </h2>
 
-          {/* Hard Recruiter Triggers */}
-          <div className="flex flex-col items-center justify-center gap-3 mb-8 w-full max-w-3xl">
-            <div className="bg-emerald-900/40 border border-emerald-400/30 px-6 py-3 rounded-xl flex items-center gap-3 backdrop-blur-md">
-              <CheckCircle2 className="text-emerald-400" size={20} />
-              <span className="text-emerald-50 font-semibold text-lg">UK Full Right to Work (Graduate Visa) & Immediate Availability</span>
+          <div className="flex flex-col items-center justify-center gap-4 mb-10 w-full max-w-4xl">
+            {/* Credentials Block */}
+            <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-gray-300 font-medium text-sm md:text-base border-b border-white/10 pb-4">
+              <span>MSc Business Analytics (Distinction), University of Essex</span>
+              <span className="text-emerald-500">•</span>
+              <span>MBA Finance</span>
+              <span className="text-emerald-500">•</span>
+              <span>Xero Level 1 & Level 2 Certified</span>
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-4 text-gray-200 font-medium">
-              <span className="bg-white/10 px-4 py-2 rounded-lg border border-white/10">🎓 MSc Business Analytics (Essex)</span>
-              <span className="bg-white/10 px-4 py-2 rounded-lg border border-white/10">🎓 MBA Finance</span>
-              <span className="bg-white/10 px-4 py-2 rounded-lg border border-white/10">📜 Xero L1 & L2 Certified</span>
+
+            {/* Work Authorization & Availability */}
+            <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-gray-200 font-semibold bg-emerald-900/20 border border-emerald-500/30 px-6 py-2 rounded-lg">
+              <span>📍 London</span>
+              <span className="text-emerald-500 hidden md:inline">|</span>
+              <span>Full UK Right to Work (Graduate Visa)</span>
+              <span className="text-emerald-500 hidden md:inline">|</span>
+              <span className="text-emerald-400">Available Immediately</span>
+              <span className="text-emerald-500 hidden md:inline">|</span>
+              <span>No Sponsorship Required</span>
+            </div>
+
+            {/* Target Roles Row */}
+            <div className="text-gray-400 text-sm font-medium tracking-wide uppercase mt-2">
+              Targeting: Finance Assistant · Accounts Assistant · Financial Analyst · Credit Risk Analyst · Junior Risk / FP&A Analyst
             </div>
           </div>
 
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed mb-10">
-            Analyst-level finance professional bridging the gap between traditional accounting operations and advanced financial modelling. 
-            Delivering institutional-grade credit risk, FP&A variance, and statutory reporting solutions.
-          </p>
-
-          {/* CTA Buttons */}
+          {/* Global Contact Actions */}
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <a href="/Amogh_HH_CV.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-[#121212] px-6 py-3 rounded-lg font-bold transition-colors">
-              <FileText size={20} />
-              Download CV
+            <a href="mailto:amoghmallikarjun0321@gmail.com" className="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-[#121212] px-6 py-3 rounded-lg font-bold transition-colors">
+              <Mail size={18} />
+              amoghmallikarjun0321@gmail.com
+            </a>
+            <a href="/Amogh_HH_CV.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+              <FileText size={18} />
+              Download CV (PDF)
             </a>
             <a href="https://github.com/Amogh21hh" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
-              <Github size={20} />
+              <Github size={18} />
               GitHub
             </a>
             <a href="https://www.linkedin.com/in/amogh-hh-34129a1b9" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#0A66C2] hover:bg-[#004182] text-white px-6 py-3 rounded-lg font-semibold transition-colors">
-              <Linkedin size={20} />
+              <Linkedin size={18} />
               LinkedIn
-            </a>
-            <a href="mailto:AMOGHMALLIKARJUN0321@GMAIL.COM" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
-              <Mail size={20} />
-              AMOGHMALLIKARJUN0321@GMAIL.COM
             </a>
           </div>
         </motion.div>
