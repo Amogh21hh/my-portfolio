@@ -30,7 +30,7 @@ export default function Overlay() {
         {/* Section 1: Center - Elite Hero Section */}
         <motion.div 
           style={{ opacity: opacity1, y: y1 }}
-          className="absolute text-center max-w-5xl w-full flex flex-col items-center pointer-events-auto"
+          className="absolute text-center max-w-5xl w-full flex flex-col items-center pointer-events-auto z-50"
         >
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-2 text-white">
             Amogh H H
@@ -67,20 +67,20 @@ export default function Overlay() {
           </div>
 
           {/* Global Contact Actions */}
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            <a href="mailto:amoghmallikarjun0321@gmail.com" className="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-[#121212] px-6 py-3 rounded-lg font-bold transition-colors">
+          <div className="flex flex-wrap items-center justify-center gap-4 relative z-50">
+            <a href="mailto:amoghmallikarjun0321@gmail.com" className="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-[#121212] px-6 py-3 rounded-lg font-bold transition-colors cursor-pointer pointer-events-auto">
               <Mail size={18} />
               AMOGHMALLIKARJUN0321@GMAIL.COM
             </a>
-            <a href="/Amogh_HH_CV.pdf" download="Amogh_HH_CV.pdf" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+            <a href="/Amogh_HH_CV.pdf" download="Amogh_HH_CV.pdf" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3 rounded-lg font-semibold transition-colors cursor-pointer pointer-events-auto">
               <FileText size={18} />
               Download CV (PDF)
             </a>
-            <a href="https://github.com/Amogh21hh" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+            <a href="https://github.com/Amogh21hh" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3 rounded-lg font-semibold transition-colors cursor-pointer pointer-events-auto">
               <Github size={18} />
               GitHub
             </a>
-            <a href="https://www.linkedin.com/in/amogh-hh-34129a1b9/" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-[#0A66C2] hover:bg-[#004182] text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+            <a href="https://www.linkedin.com/in/amogh-hh-34129a1b9/" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-[#0A66C2] hover:bg-[#004182] text-white px-6 py-3 rounded-lg font-semibold transition-colors cursor-pointer pointer-events-auto">
               <Linkedin size={18} />
               LinkedIn
             </a>
@@ -90,7 +90,7 @@ export default function Overlay() {
         {/* Section 2: Left Aligned - Value Prop */}
         <motion.div 
           style={{ opacity: opacity2, y: y2 }}
-          className="absolute left-8 md:left-24 max-w-2xl pointer-events-auto"
+          className="absolute left-8 md:left-24 max-w-2xl pointer-events-auto z-50"
         >
           <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-white">
             Evidence-Based<br />
@@ -109,10 +109,11 @@ export default function Overlay() {
         {/* Section 3: Right Aligned - Ready to Work */}
         <motion.div 
           style={{ opacity: opacity3, y: y3 }}
-          className="absolute right-8 md:right-24 max-w-xl text-right pointer-events-auto"
+          className="absolute right-8 md:right-24 max-w-xl text-right pointer-events-auto z-50"
         >
           <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-white">
             Ready to Drive Value<br />
+
             From Day One.
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed mb-6">
