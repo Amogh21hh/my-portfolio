@@ -1,10 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Database, Calculator, LineChart, AlertCircle, TrendingUp, PieChart, ShieldCheck } from "lucide-react";
+import { ExternalLink, Github, Database, Calculator, LineChart, AlertCircle, TrendingUp, PieChart, ShieldCheck, FileSpreadsheet } from "lucide-react";
 
 export default function FeaturedProjects() {
   const flagshipProjects = [
+    {
+      title: "UK Statutory Accounting Model — Maple & Bean Coffee Co.",
+      icon: <FileSpreadsheet className="text-emerald-400 mb-3" size={28} />,
+      subtitle: "End-to-end SME accounting simulation",
+      outcomes: [
+        "Full 6-month financial cycle with complete Trial Balance reconciliation.",
+        "Built-in VAT returns, Corporation Tax calculations, and Employment Allowance processing.",
+        "FRS 105 micro-entity compliance incorporated into final statutory reporting.",
+        "Simulated £129k revenue with precise Excel-based double-entry accounting mechanics."
+      ],
+      githubLink: "https://github.com/Amogh21hh"
+    },
     {
       title: "IFRS 9 Expected Credit Loss Model - UK SME Portfolio",
       icon: <Database className="text-emerald-400 mb-3" size={28} />,
@@ -14,7 +26,7 @@ export default function FeaturedProjects() {
         "PD via WoE binning and logistic regression (AUC 0.77); LGD and EAD by collateral and CCF.",
         "IFRS 9 staging (SICR, Stage 1/2/3) with a probability-weighted three-scenario macro overlay."
       ],
-      githubLink: "https://github.com/Amogh21hh/uk-sme-credit-risk-ifrs9-ecl"
+      githubLink: "https://github.com/Amogh21hh"
     },
     {
       title: "Rolls-Royce Holdings plc - DCF Valuation",
@@ -25,7 +37,7 @@ export default function FeaturedProjects() {
         "WACC sensitivity analysis and terminal value derivation.",
         "Investment thesis formulation based on fundamental intrinsic value."
       ],
-      githubLink: "https://github.com/Amogh21hh/rolls-royce-dcf-valuation"
+      githubLink: "https://github.com/Amogh21hh"
     },
     {
       title: "FP&A Variance Engine",
@@ -36,7 +48,7 @@ export default function FeaturedProjects() {
         "Detailed price, volume, and mix breakdown for revenue analysis.",
         "ARIMA forecasting integration combining Excel reporting with Python analytics."
       ],
-      githubLink: "https://github.com/Amogh21hh/fpa-variance-engine"
+      githubLink: "https://github.com/Amogh21hh"
     },
     {
       title: "UK Credit Restructuring Model",
@@ -47,19 +59,7 @@ export default function FeaturedProjects() {
         "Liquidity crisis modelling and cash flow runway assessment.",
         "Debt restructuring plan and recovery improvement analysis."
       ],
-      githubLink: "https://github.com/Amogh21hh/uk-credit-restructuring-model"
-    },
-    {
-      title: "ATLAS - Financial Distress Simulator",
-      icon: <TrendingUp className="text-emerald-400 mb-3" size={28} />,
-      subtitle: "Advanced financial risk engine",
-      outcomes: [
-        "Merton distance-to-default model combined with Altman Z-score.",
-        "Bayesian belief updating system for lender confidence.",
-        "Interactive macro shock simulation dashboard."
-      ],
-      liveLink: "https://atlas-finance-game.streamlit.app",
-      githubLink: "https://github.com/Amogh21hh/atlas-finance-game"
+      githubLink: "https://github.com/Amogh21hh"
     }
   ];
 
@@ -71,8 +71,7 @@ export default function FeaturedProjects() {
       outcomes: [
         "Financial trade-off analysis between European manufacturing costs and reduced inventory write-offs.",
         "Modelled how 'small batch' production cycles improve Working Capital and Cash Conversion Cycles."
-      ],
-      githubLink: "https://github.com/Amogh21hh/zara-cost-analysis"
+      ]
     },
     {
       title: "Project Financial Analysis: Hornsea One Wind Farm",
@@ -81,8 +80,7 @@ export default function FeaturedProjects() {
       outcomes: [
         "Analysed Contract for Difference (CfD) financial mechanisms.",
         "Developed a comprehensive Work Breakdown Structure (WBS) and PERT/CPM models."
-      ],
-      githubLink: "https://github.com/Amogh21hh/hornsea-one-wind-farm"
+      ]
     }
   ];
 
@@ -126,16 +124,6 @@ export default function FeaturedProjects() {
                 </div>
 
                 <div className="flex gap-4 mt-6">
-                  {project.liveLink && (
-                    <a 
-                      href={project.liveLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm font-bold flex items-center justify-center w-full gap-2 text-[#121212] bg-emerald-400 hover:bg-emerald-300 px-4 py-3 rounded-lg transition-colors"
-                    >
-                      Open Live Demo <ExternalLink size={16} />
-                    </a>
-                  )}
                   {project.githubLink && (
                     <a 
                       href={project.githubLink}
@@ -175,19 +163,6 @@ export default function FeaturedProjects() {
                       </li>
                     ))}
                   </ul>
-                </div>
-
-                <div className="flex gap-4 mt-6">
-                  {project.githubLink && (
-                    <a 
-                      href={project.githubLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm font-semibold flex items-center justify-center w-full gap-2 text-gray-300 bg-white/5 hover:bg-white/10 border border-white/10 px-4 py-3 rounded-lg transition-colors"
-                    >
-                      View on GitHub <Github size={16} />
-                    </a>
-                  )}
                 </div>
               </motion.div>
             ))}

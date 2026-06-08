@@ -21,9 +21,9 @@ export default function Footer() {
 
         {/* Contact Information */}
         <div className="flex flex-col gap-4 text-gray-300 font-medium">
-          <a href="mailto:amoghmallikarjun0321@gmail.com" className="flex items-center gap-3 hover:text-emerald-400 transition-colors bg-white/5 px-6 py-3 rounded-lg border border-white/10">
+          <a href="mailto:AMOGHMALLIKARJUN0321@GMAIL.COM" className="flex items-center gap-3 hover:text-emerald-400 transition-colors bg-white/5 px-6 py-3 rounded-lg border border-white/10">
             <Mail size={18} className="text-emerald-400" />
-            amoghmallikarjun0321@gmail.com
+            AMOGHMALLIKARJUN0321@GMAIL.COM
           </a>
           
           <a href="tel:+447429880957" className="flex items-center gap-3 hover:text-emerald-400 transition-colors bg-white/5 px-6 py-3 rounded-lg border border-white/10">
